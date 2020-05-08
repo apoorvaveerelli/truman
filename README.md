@@ -31,6 +31,12 @@ This is necessary, as .env stores all your important keys and other information 
 
 Next, start by opening the CMD and navigating (cd /yourdirectory) to where ever Truman is on your computer.
 
+Install the following environments one after the other:
+```bash
+npm install async
+npm install dotenv
+```
+
 Ok, now open another CMD and run MongoDB by entering
 ```bash
 mongo
@@ -38,6 +44,17 @@ mongo
 (If on a MAC and running into errors, check this [stack](https://stackoverflow.com/questions/11707938/mongodb-installed-via-homebrew-not-working) post)
 
 If this doesn't work, see tutorial on adding [mongoDB](https://closebrace.com/tutorials/2017-03-02/the-dead-simple-step-by-step-guide-for-front-end-developers-to-getting-up-and-running-with-nodejs-express-and-mongodb) to the PATH file.
+
+For mac users, if the tutorials did not work, run the following commands one at a time to add mongoDB:
+```bash
+brew tap mongodb/brew
+brew install mongodb-community@4.2
+brew services start mongodb-community@4.2
+```
+To enable the cloud-based service, run the following command:
+```bash
+mongo
+```
 
 You should see some text scroll by, and then enter
 ```bash
